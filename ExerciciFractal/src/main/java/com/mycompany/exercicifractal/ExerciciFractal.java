@@ -38,13 +38,12 @@ public class ExerciciFractal {
         }
         
         else if(lado>1){
-        
         return 4*lado+contarPerimetroFractal(lado/2);
             
         }
         
         
-        return -1;
+        return 0;
     }
 
 
