@@ -43,7 +43,7 @@ public class ExerciciFractal {
         }
         
         
-        return 0;
+        return -1;
     }
 
 
