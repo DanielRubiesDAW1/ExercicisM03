@@ -45,7 +45,15 @@ public class ExerciciFractal {
         
         return -1;
     }
+  public static void morarArray(int [] valores){
+    
+        for (int i = 0; i < valores.length; i++) {
+            
+            System.out.println("Posocion "+i+ " conte --> "+valores[i]);
 
+        }
+    
+    }
 //ejercicio GIT DANI
 
     
