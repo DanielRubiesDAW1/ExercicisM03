@@ -23,6 +23,7 @@ public class Aranyas1 {
        
         System.out.println("El resultado es "+potes);
         
+        System.out.println("MENSAJE DE GIT PUSH");
     }
 
     private static int potesaranyes(int aranyes){
@@ -47,5 +48,6 @@ public class Aranyas1 {
     
     }
 
+   
 }
 
