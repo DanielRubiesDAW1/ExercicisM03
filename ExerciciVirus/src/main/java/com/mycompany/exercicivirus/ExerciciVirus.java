@@ -13,35 +13,31 @@ import java.util.Scanner;
  */
 public class ExerciciVirus {
 
-    public static void main(String[] args) {
+ public static void main(String[] args) {
+          Scanner sc = new Scanner(System.in);
+          System.out.println("Cuantes files tens?");
+          int files =  sc.nextInt();
 
-             Scanner sc = new Scanner(System.in);
-          System.out.println("Dime el dia y te dire los virus?");
-          int dia =  sc.nextInt();
-          int virus= contarVirus(dia);
-          System.out.println(virus);
-      
+          int bitlles = contarBitlles(files);
+          
+          System.out.println(files + " tenen " + bitlles + " bitlles.");
+      }
+
+    private static int contarBitlles(int files) {
+        int bitlles;
+        if(files==1)
+        {
+            bitlles = 1;
+            return bitlles;
+        }
+        else if(files>1)
+        {
+            bitlles = files;
+            return bitlles+contarBitlles(files-1);
+        }
+
+        return -1;
     }
-    
-    
-        public static int contarVirus(int dia){
-
-        
-        if(dia==1){
-        
-            
-            return 1;
-            
-        }
-        
-        else if(dia>1){
-        
-        return 3*contarVirus(dia);
-        
-        }
-        return 0;
-        
-
+     
 }
-        
-}
+
